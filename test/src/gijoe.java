@@ -2,16 +2,17 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
-//Note App Verrsion 1.0
+
+import javax.swing.*;
+//import javax.swing.JFrame; import javax.swing.JTextArea;
+
+//Note App Version 1.0
 // 12-3 Just got a GUI from stackoverflow, trying to understand it, and make desirable changes
 public class gijoe{
 
     public static void main(String[] args) {
 
-        JFrame f = new JFrame("Jose's Note Code");
+        JFrame f = new JFrame("Jose's Notes");
         f.setSize(800, 800);
         f.setResizable(false);
         f.setLocation(300,200);
@@ -24,7 +25,6 @@ public class gijoe{
             @Override
             public void actionPerformed(ActionEvent e) {
                 textArea.append("Button was clicked\n");
-
             }
         });
 
