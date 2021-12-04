@@ -22,7 +22,6 @@ public class Classes {
         boeing747.fuelBurnRate = 9.3;
         boeing747.milesFlight = (boeing747.fuelCap / boeing747.fuelBurnRate) * boeing747.speed;
 
-
         System.out.println("Boeing747 passengers: " + boeing747.passengers);
         System.out.println("Boeing Fuel burn rate: " + boeing747.fuelBurnRate + " Gallons Per Hour");
         System.out.println("The Boeing747 will be able to fly for: " + boeing747.milesFlight
@@ -44,7 +43,7 @@ public class Classes {
     int speed;   // mph
     double fuelCap;   // gallons
     double fuelBurnRate;  //gallons per hours
-    double milesFlight;
+    double milesFlight = (fuelCap / fuelBurnRate) * speed;
 }
 
  */
